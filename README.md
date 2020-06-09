@@ -10,3 +10,7 @@ Some Useful Tools for Object Detection in Remote Sensing Imagery. 一些遥感�
 * [data_aug.py](https://github.com/fan0210/detection_tools/blob/master/data_aug.py)
 
   遥感图像目标检测数据扩充（在线增强），包括随机旋转、随机裁切、水平竖直翻转、随机线性增强、随机灰度化等，适用于OBB和HBB
+  
+* [poly_to_rect.py](https://github.com/fan0210/detection_tools/blob/master/poly_to_rect.py)
+  
+  代替cv2.minAreaRect,在DOTA上可提升~1AP

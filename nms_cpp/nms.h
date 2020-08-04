@@ -6,15 +6,15 @@
 
 using namespace std;
 
-struct Obj
+struct BBox
 {
-	float iou(const Obj &, bool rect)const;
+	float iou(const BBox &, bool rect)const;
 	string cla;
 	float score;
 	float x1, y1, x2, y2, x3, y3, x4, y4;
 };
 
-float Obj::iou(const Obj &bbox, bool rect)const
+float BBox::iou(const BBox &bbox, bool rect)const
 {
 	if (rect)
 	{
@@ -39,7 +39,7 @@ struct ListNode
 	ListNode *next;
 };
 
-vector<BBox> nms(vector<BBox> &bboxes, const vector<string> &cls, float thresh, bool rect) //rect:����Ϊtrue, б��Ϊfalse
+vector<BBox> nms(vector<BBox> &bboxes, const vector<string> &cls, float thresh, bool rect) //rect:Õý¿òÎªtrue, Ð±¿òÎªfalse
 {
 	sort(bboxes.begin(), bboxes.end(), [](const BBox &bb1, const BBox &bb2) {return bb1.score > bb2.score; });
 	vector<BBox>ret;

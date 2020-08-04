@@ -14,3 +14,8 @@ Some Useful Tools for Object Detection in Remote Sensing Imagery. 一些遥感�
 * [poly_to_rect.py](https://github.com/fan0210/detection_tools/blob/master/poly_to_rect.py)
   
   代替cv2.minAreaRect,在DOTA上可提升~1AP
+  
+* [nms_cpp](https://github.com/fan0210/detection_tools/blob/master/nms_cpp)
+  
+  部署用的C++版nms，支持正矩形和任意四边形
+  
